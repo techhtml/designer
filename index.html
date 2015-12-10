@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- DOCTYPE만 대문자, 나머지는 소문자 -->
+<!-- DOCTYPE - HTML의 버전 -->
+<!-- 1991년 (HTML 1.0) - 2015년 (HTML 5.0) -->
+<!-- XHTML, DHTML (???), HTML -->
+<!-- 브라우저가 이 문서가.. HTML 4.0으로 써졌는지.. 5.0 모를거니까 1번째 줄에, 이거 HTML5야 라고 명시 -->
+<!-- DTD - Document Type Definition / Document Type Definication Declaration -->
+<!-- DOCTYPE을 작성해주지 않으면, 명시적으로 레거시 코드 -->
+<html>
+	<!-- 꺽쇠(<) + 태그명 + 닫는꺽쇠(>)가 결합하면 열린TAG -->
+	<!-- 꺽쇠(<) + 슬래쉬(/) + 태그명 + 닫는꺽쇠(>) 닫는TAG -->
+	<!-- 여는태그 + 닫는태그 = 요소(Element) -->
+	<!-- 모든 속성은 여는태그에 넣어야 합니다. -->
+	<!-- 태그명은 소문자여야 합니다 -->
+	<head>
+		<!-- head 요소는 컴퓨터한테 제공할 모든 정보 -->
+		<!-- 유저는 못봐도 됨 -->
+		<meta charset="UTF-8">
+		<!-- meta, metadata, 컴퓨터한테 주는 데이터 -->
+		<!-- charset = 이 페이지를 어떤 언어로 해석할것이냐 -->
+		<!-- EUC-KR, ISO-8879 -->
+		<!-- 이게 없으면 한글이 깨짐 -->
+		<title>홈페이지의 제목</title>
+		<!-- 태그 안에... 콘텐츠를 포함할 수 있느냐에 따라...
+		     태그가 빈태그를 사용할 수도 있다 -->
+	  <!-- 타이틀은 홈페이지의 제목 -->
+		<meta name="viewport" content="initial-scale=1">
+		<!-- viewport - 내가 이 화면을 어떻게 볼거냐 -->
+		<!-- view + port - 내가 볼 수 있는 영역 -->
+		<!-- 이 홈페이지를 모바일(태블릿)에서 접속했을 때,
+		     기본값을 어떻게 줄건지 -->
+		<!-- width (가로사이즈),
+				initial-scale (기본 배율), 설정을 안하면 980px
+				minimum-scale (최소 배율),
+				maximum-scale (최대 배율),
+				user-scalable (유저가 확대/축소를 할 수 있게 할지)
+		-->
+		<meta property="og:title" content="페이스북에 공유할 때 타이틀">
+		<meta property="og:description" content="페이스북에 공유할 때 밑에 뜨는거">
+		<meta property="og:image" content="페이스북에 공유할 때 이미지">
+		<!-- 페이스북 -->
+		<link rel="stylesheet" href="style.css">
+		<!-- rel = relation -->
+	</head>
+	<body>
+		<!-- 우리 눈에 보이는건 전부 body 안에 들어감 -->
+		<!-- CSS를 공부하게 되면.. body 내 요소가 30배정도 중요해짐 -->
+		<header>
+			<h1>배달의민족</h1>
+			<p>배달의민족은 좋은음식을 먹고싶은 곳에서 라는 비전 하에 ...</p>
+		</header>
+		<!-- 헤더 -->
+		<main></main>
+		<!-- 메인 -->
+		<footer></footer>
+		<!-- 푸터 -->
+	</body>
+	<!-- 부모 자식관계 -->
+	<!-- 여는 태그와 닫는 태그 사이에 다른 요소가 들어가면,
+	     그 태그의 자식이 된다. -->
+  <!-- html 부모, head 자식, body 자식 -->
+	<!-- 유전관계(상속, Cascading) (CSS할 때는 영향이 좀 있음) -->
+</html>

@@ -1,0 +1,35 @@
+/**
+ * CSS - Cascading Style Sheet
+ * Cascading (부모의 영향을 자식이 받아요)
+ * html
+ * - body
+ *   - header
+ *     - h1
+ *     - p
+ *   - main
+ *   - footer
+ */
+body {
+    width: 1000px; /* 가로길이 */
+    height: 1000px; /* 세로길이 */
+    padding: 10px; /* 테두리와 콘텐츠 사이 간격 */
+    margin: 10px; /* 박스들 사이 간격 */
+    border: 1px solid #555; /* 테두리 */
+    font-size: 15px; /* 폰트사이즈 */
+    line-height: 1.5; /* 행간 */
+    letter-spacing:-1px; /* 자간 */
+    font-family: "Apple SD Gothic Neo", sans-serif; /* 폰트 */
+    font-weight: 300; /* 폰트 굵기 */
+}
+header {
+    position: sticky;
+    top: 0;
+}
+header h1 {}
+header p {}
+
+/*
+ * Selector {
+ *
+ * }
+ */
